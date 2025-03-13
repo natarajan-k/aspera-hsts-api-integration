@@ -28,6 +28,7 @@ fetch(
     {
         headers: { "Content-Type": "application/json", "accept": "application/json", "Authorization": "Basic <INSERT YOUR BASIC AUTH TOKEN>" },
         method: "POST",
+        //rejectUnauthorized: false,
         body: JSON.stringify(object)
     }
 )

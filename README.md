@@ -65,6 +65,10 @@ Refer to [4] (Step 3) for complete steps to do this.
         The URL of the Aspera Node
         The Basic Auth Token
 
+        If the HSTS NodeAPI does not have proper certificates, add this line in the fetch section of index.js to ignore certificates and continue. This is only for test and development purposes only. Should be avoided in production environment.    
+
+        rejectUnauthorized: false,
+
 4. Serve the new application. 
 
         cd /opt/software/myapp/aspera-connect-sdk-js/examples/upload
